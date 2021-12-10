@@ -18,7 +18,7 @@ PHP version: PHP 7.1.33
 3. 一键命令：
 
    ```shell
-   yum install git -y && git clonehttps://github.com/939189011/lnmp.git && cd lnmp && chmod +x lnmp.sh && bash lnmp.sh
+   yum install git -y && git clone https://github.com/939189011/lnmp.git && cd lnmp && chmod +x lnmp.sh && bash lnmp.sh
    ```
 
    
