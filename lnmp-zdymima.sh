@@ -55,6 +55,7 @@ else
 fi
 # 安装MySQL源
 yum -y localinstall http://dev.mysql.com/get/mysql57-community-release-el7-7.noarch.rpm
+sed -i "s/gpgcheck=1/gpgcheck=0/g"  /etc/yum.repos.d/mysql-community.repo
 status_mysql=` yum repolist enabled |grep "mysql.*-community.*" |wc -l `
 if [ $status_mysql != 0 ];then
    echo -e "${green} Mysql YUM 已经正常安装 ${plain}"
