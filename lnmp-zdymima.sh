@@ -233,7 +233,7 @@ cp /etc/nginx/nginx.conf /etc/nginx/nginx.conf.bak
 sed -i "s/user  nginx;/user  nginx nginx;/g" /etc/nginx/nginx.conf
 echo $? = "修改nginx.conf文件"
 sed -i "s/expose_php = On/expose_php = Off/g"  /etc/php.ini
-echo $? = "修改pho.ini文件"
+echo $? = "修改php.ini文件"
 cp /etc/nginx/conf.d/default.conf{,.bak} 
 cat > /etc/nginx/conf.d/default.conf <<EOF
 server {
